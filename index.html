@@ -10,21 +10,23 @@
   <meta property="og:title" content="Fernanda Damasceno de Souza" />
   <meta property="og:description" content="Estudante de medicina (USCS) · Pesquisadora em síntese de evidências e IA na saúde." />
   <meta property="og:type" content="profile" />
+  <meta name="theme-color" content="#0F1628" />
 
   <style>
     :root {
-      --navy:   #0D1B3E;   /* texto principal */
-      --cobalt: #1A3AD4;   /* acento (Inverno Brilhante) */
-      --silver: #C9CDD6;   /* prata — sua assinatura */
-      --bg:     #F4F6FB;   /* fundo gelo */
-      --card:   #FFFFFF;
+      --navy:   #E9ECF6;   /* texto principal (off-white suave, dark) */
+      --cobalt: #6E93EA;   /* acento cobalto (clareado p/ fundo escuro) */
+      --silver: #AAB3C7;   /* prata — sua assinatura */
+      --muted:  #99A3BC;   /* secundário */
+      --bg:     #0F1628;   /* fundo navy escuro */
+      --card:   #182241;   /* superfície dos cards */
+      --line:   rgba(255,255,255,.09);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { -webkit-text-size-adjust: 100%; }
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
       color: var(--navy);
       line-height: 1.5;
       min-height: 100vh;
@@ -32,6 +34,10 @@
       justify-content: center;
       padding: 40px 20px 56px;
       -webkit-font-smoothing: antialiased;
+      background:
+        radial-gradient(900px 520px at 50% -8%, #1E2C54 0%, rgba(30,44,84,0) 60%),
+        linear-gradient(180deg, #141C34 0%, #0F1628 46%, #0C1120 100%);
+      background-attachment: fixed;
     }
 
     .wrap {
@@ -55,7 +61,7 @@
       font-size: 34px;
       font-weight: 700;
       letter-spacing: 1px;
-      box-shadow: 0 0 0 4px #fff, 0 0 0 6px var(--silver);
+      box-shadow: 0 0 0 4px #0C1120, 0 0 0 6px rgba(110,147,234,.5), 0 10px 30px rgba(0,0,0,.45);
       user-select: none;
     }
     /* Para usar uma foto no lugar das iniciais:
@@ -72,14 +78,14 @@
     .role {
       margin-top: 6px;
       font-size: 0.98rem;
-      color: #44506E;
+      color: #C2CADC;
       text-align: center;
       max-width: 360px;
     }
     .role-en {
       margin-top: 2px;
       font-size: 0.82rem;
-      color: #8089A0;
+      color: var(--muted);
       font-style: italic;
       text-align: center;
       max-width: 360px;
@@ -88,7 +94,7 @@
     .divider {
       width: 44px;
       height: 2px;
-      background: var(--silver);
+      background: linear-gradient(90deg, transparent, var(--silver), transparent);
       border: none;
       margin: 22px 0 4px;
     }
@@ -100,7 +106,7 @@
       font-weight: 700;
       letter-spacing: 1.5px;
       text-transform: uppercase;
-      color: #8089A0;
+      color: var(--silver);
       margin: 26px 0 4px;
       display: flex;
       align-items: center;
@@ -110,7 +116,7 @@
       content: "";
       flex: 1;
       height: 1px;
-      background: var(--silver);
+      background: var(--line);
     }
 
     /* ---- Links ---- */
@@ -126,8 +132,8 @@
       display: flex;
       align-items: center;
       gap: 14px;
-      background: var(--card);
-      border: 1.5px solid var(--silver);
+      background: linear-gradient(180deg, var(--card) 0%, #131B33 100%);
+      border: 1px solid var(--line);
       border-radius: 14px;
       padding: 15px 18px;
       text-decoration: none;
@@ -138,10 +144,10 @@
     .links a:focus-visible {
       border-color: var(--cobalt);
       transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(26,58,212,.12);
+      box-shadow: 0 8px 22px rgba(110,147,234,.18);
       outline: none;
     }
-    .links a:focus-visible { box-shadow: 0 0 0 3px rgba(26,58,212,.35); }
+    .links a:focus-visible { box-shadow: 0 0 0 3px rgba(110,147,234,.4); }
 
     .ic {
       flex: 0 0 26px;
@@ -156,14 +162,14 @@
 
     .txt { display: flex; flex-direction: column; }
     .txt .t { font-weight: 600; font-size: 1rem; }
-    .txt .s { font-size: 0.8rem; color: #7A8299; }
+    .txt .s { font-size: 0.8rem; color: var(--muted); }
 
-    .arrow { margin-left: auto; color: var(--silver); flex: 0 0 auto; }
+    .arrow { margin-left: auto; color: var(--silver); flex: 0 0 auto; opacity: .65; }
 
     footer {
       margin-top: 30px;
       font-size: 0.74rem;
-      color: #9aa2b5;
+      color: #6E7796;
       text-align: center;
     }
 
