@@ -4,296 +4,117 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fernanda Damasceno de Souza — Links</title>
-  <meta name="description" content="Estudante de medicina (USCS) e pesquisadora em síntese de evidências e IA na saúde. Lattes, ORCID, LinkedIn, Instagram e o canal The Deep Sync." />
-
-  <!-- Open Graph (pré-visualização ao compartilhar o link) -->
+  <meta name="description" content="Estudante de medicina (USCS) e pesquisadora em síntese de evidências e IA na saúde. Lattes, ORCID, LinkedIn, Instagram e o canal Meu Locus." />
   <meta property="og:title" content="Fernanda Damasceno de Souza" />
-  <meta property="og:description" content="Estudante de medicina (USCS) · Pesquisadora em síntese de evidências e IA na saúde." />
+  <meta property="og:description" content="Estudante de medicina (USCS) · síntese de evidências, IA e os detalhes que mudam tudo." />
   <meta property="og:type" content="profile" />
-  <meta name="theme-color" content="#0F1628" />
-
+  <meta name="theme-color" content="#F1F2FC" />
   <style>
-    :root {
-      --navy:   #E9ECF6;   /* texto principal (off-white suave, dark) */
-      --cobalt: #6E93EA;   /* acento cobalto (clareado p/ fundo escuro) */
-      --silver: #AAB3C7;   /* prata — sua assinatura */
-      --muted:  #99A3BC;   /* secundário */
-      --bg:     #0F1628;   /* fundo navy escuro */
-      --card:   #182241;   /* superfície dos cards */
-      --line:   rgba(255,255,255,.09);
+    :root{
+      --navy:#2A3055; --cobalt:#5B79E0; --silver:#9AA0C0; --muted:#767BA0;
+      --bg:#F1F2FC; --card:#FFFFFF; --line:rgba(42,48,85,.10);
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { -webkit-text-size-adjust: 100%; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: var(--navy);
-      line-height: 1.5;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      padding: 40px 20px 56px;
-      -webkit-font-smoothing: antialiased;
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      color:var(--navy);line-height:1.5;min-height:100vh;display:flex;justify-content:center;
+      padding:40px 20px 56px;-webkit-font-smoothing:antialiased;
       background:
-        radial-gradient(900px 520px at 50% -8%, #1E2C54 0%, rgba(30,44,84,0) 60%),
-        linear-gradient(180deg, #141C34 0%, #0F1628 46%, #0C1120 100%);
-      background-attachment: fixed;
+        radial-gradient(900px 520px at 50% -8%, #E4E6FA 0%, rgba(228,230,250,0) 60%),
+        linear-gradient(180deg, #FAFBFF 0%, #F1F2FC 46%, #ECEDFA 100%);
+      background-attachment:fixed;
     }
-
-    .wrap {
-      width: 100%;
-      max-width: 480px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    /* ---- Cabeçalho ---- */
-    .avatar {
-      width: 96px;
-      height: 96px;
-      border-radius: 50%;
-      background: var(--cobalt);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 34px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      box-shadow: 0 0 0 4px #0C1120, 0 0 0 6px rgba(110,147,234,.5), 0 10px 30px rgba(0,0,0,.45);
-      user-select: none;
-    }
-    /* Para usar uma foto no lugar das iniciais:
-       1) coloque "foto.jpg" nesta pasta
-       2) troque "background: var(--cobalt);" por:
-          background: url('foto.jpg') center/cover; */
-
-    h1 {
-      margin-top: 18px;
-      font-size: 1.5rem;
-      font-weight: 700;
-      text-align: center;
-    }
-    .role {
-      margin-top: 6px;
-      font-size: 0.98rem;
-      color: #C2CADC;
-      text-align: center;
-      max-width: 360px;
-    }
-    .role-en {
-      margin-top: 2px;
-      font-size: 0.82rem;
-      color: var(--muted);
-      font-style: italic;
-      text-align: center;
-      max-width: 360px;
-    }
-
-    .divider {
-      width: 44px;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--silver), transparent);
-      border: none;
-      margin: 22px 0 4px;
-    }
-
-    /* ---- Rótulo de seção ---- */
-    .section-label {
-      width: 100%;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--silver);
-      margin: 26px 0 4px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .section-label::after {
-      content: "";
-      flex: 1;
-      height: 1px;
-      background: var(--line);
-    }
-
-    /* ---- Links ---- */
-    .links {
-      width: 100%;
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-top: 12px;
-    }
-    .links a {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      background: linear-gradient(180deg, var(--card) 0%, #131B33 100%);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 15px 18px;
-      text-decoration: none;
-      color: var(--navy);
-      transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
-    }
-    .links a:hover,
-    .links a:focus-visible {
-      border-color: var(--cobalt);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 22px rgba(110,147,234,.18);
-      outline: none;
-    }
-    .links a:focus-visible { box-shadow: 0 0 0 3px rgba(110,147,234,.4); }
-
-    .ic {
-      flex: 0 0 26px;
-      width: 26px;
-      height: 26px;
-      color: var(--cobalt);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .ic svg { width: 24px; height: 24px; }
-
-    .txt { display: flex; flex-direction: column; }
-    .txt .t { font-weight: 600; font-size: 1rem; }
-    .txt .s { font-size: 0.8rem; color: var(--muted); }
-
-    .arrow { margin-left: auto; color: var(--silver); flex: 0 0 auto; opacity: .65; }
-
-    footer {
-      margin-top: 30px;
-      font-size: 0.74rem;
-      color: #6E7796;
-      text-align: center;
-    }
-
-    @media (max-width: 380px) {
-      .links a { padding: 13px 15px; }
-      h1 { font-size: 1.35rem; }
-    }
+    .wrap{width:100%;max-width:480px;display:flex;flex-direction:column;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:50%;background:var(--cobalt);color:#fff;
+      display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:700;letter-spacing:1px;
+      box-shadow:0 0 0 4px #FFFFFF,0 0 0 6px rgba(91,121,224,.32),0 10px 30px rgba(42,48,85,.14);user-select:none}
+    h1{margin-top:18px;font-size:1.5rem;font-weight:700;text-align:center}
+    .role{margin-top:6px;font-size:.98rem;color:#4C5176;text-align:center;max-width:360px}
+    .role-en{margin-top:2px;font-size:.82rem;color:var(--muted);font-style:italic;text-align:center;max-width:360px}
+    .story{width:100%;margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px}
+    .story summary{cursor:pointer;font-weight:600;color:var(--navy);list-style:none}
+    .story summary::-webkit-details-marker{display:none}
+    .story p{margin-top:10px;font-size:.9rem;color:var(--muted);line-height:1.6}
+    .divider{width:44px;height:2px;background:linear-gradient(90deg,transparent,var(--silver),transparent);border:none;margin:22px 0 4px}
+    .section-label{width:100%;font-size:.72rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--silver);margin:26px 0 4px;display:flex;align-items:center;gap:12px}
+    .section-label::after{content:"";flex:1;height:1px;background:var(--line)}
+    .links{width:100%;list-style:none;display:flex;flex-direction:column;gap:12px;margin-top:12px}
+    .links a,.links-soon{display:flex;align-items:center;gap:14px;
+      background:linear-gradient(180deg,#FFFFFF 0%,#F4F6FE 100%);border:1px solid var(--line);border-radius:16px;
+      padding:15px 18px;text-decoration:none;color:var(--navy);transition:transform .12s ease,border-color .12s ease,box-shadow .12s ease}
+    .links a:hover,.links a:focus-visible{border-color:var(--cobalt);transform:translateY(-2px);box-shadow:0 8px 22px rgba(91,121,224,.18);outline:none}
+    .links a:focus-visible{box-shadow:0 0 0 3px rgba(91,121,224,.38)}
+    .links-soon{border-style:dashed;opacity:.85;cursor:default}
+    .ic{flex:0 0 26px;width:26px;height:26px;color:var(--cobalt);display:flex;align-items:center;justify-content:center}
+    .ic svg{width:24px;height:24px}
+    .txt{display:flex;flex-direction:column}
+    .txt .t{font-weight:600;font-size:1rem}
+    .txt .s{font-size:.8rem;color:var(--muted)}
+    .arrow{margin-left:auto;color:var(--silver);flex:0 0 auto;opacity:.65}
+    footer{margin-top:30px;font-size:.74rem;color:#9AA0C0;text-align:center}
+    @media (max-width:380px){.links a,.links-soon{padding:13px 15px}h1{font-size:1.35rem}}
+    @media (min-width:768px){.wrap{max-width:520px}body{padding-top:64px}.avatar{width:108px;height:108px;font-size:38px}h1{font-size:1.7rem}}
   </style>
 </head>
 <body>
   <main class="wrap">
-
     <div class="avatar" aria-hidden="true">FDS</div>
-
     <h1>Fernanda Damasceno de Souza</h1>
-    <p class="role">Estudante de medicina (USCS) · Pesquisadora em síntese de evidências e IA na saúde</p>
+    <p class="role">Estudante de medicina (USCS) · síntese de evidências, IA e os detalhes que mudam tudo</p>
     <p class="role-en">Medical student &amp; researcher — evidence synthesis &amp; AI in health</p>
+
+    <details class="story">
+      <summary>📖 Minha história</summary>
+      <p>Desde pequena fui dividida entre dois amores: as exatas e as biológicas. Esse fascínio pelos números me levou à engenharia, na Poli. Mas foi ali, em projetos de extensão com ONGs de saúde, que entendi: apesar de amar programar e analisar resultados quantitativos, eu queria estar cuidando de pessoas, de perto. Saí da Poli e fui atrás da medicina.<br><br>
+      E na medicina encontrei a genética — onde meus dois lados se reencontraram: exatas + biológicas + o cuidado com gente, no mesmo lugar, onde ainda programo, analiso dados e cuido de vidas. Os detalhes que mudam tudo.<br><br>
+      Hoje sou quase médica (USCS), pesquisadora em síntese de evidências e IA na saúde, e criadora do Meu Locus. No caminho, virei humana da Luna, movida a chá e a um TDAH muito produtivo. Se há um fio costurando tudo, é a curiosidade. Eternamente curiosa.</p>
+    </details>
 
     <hr class="divider" />
 
-    <!-- ===================== SEÇÃO 1 ===================== -->
     <p class="section-label">Pessoal &amp; acadêmico</p>
     <ul class="links">
-
-      <li>
-        <a href="https://instagram.com/ferdamsceno" target="_blank" rel="me noopener noreferrer">
-          <span class="ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.7" fill="currentColor" stroke="none"/></svg>
-          </span>
-          <span class="txt"><span class="t">Instagram</span><span class="s">@ferdamsceno · bastidores &amp; contato</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://www.linkedin.com/in/fernanda-damasceno-de-souza/" target="_blank" rel="me noopener noreferrer">
-          <span class="ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM3 9h4v12H3V9Zm6 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85V21H9V9Z"/></svg>
-          </span>
-          <span class="txt"><span class="t">LinkedIn</span><span class="s">Trajetória profissional</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://lattes.cnpq.br/6187206833642626" target="_blank" rel="me noopener noreferrer">
-          <span class="ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg>
-          </span>
-          <span class="txt"><span class="t">Currículo Lattes</span><span class="s">CV acadêmico (CNPq)</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://orcid.org/0009-0001-8579-6436" target="_blank" rel="me noopener noreferrer">
-          <span class="ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 8.5v7"/><circle cx="9" cy="6.4" r="0.4" fill="currentColor"/><path d="M13 8.5h2.2a3.5 3.5 0 0 1 0 7H13v-7Z"/></svg>
-          </span>
-          <span class="txt"><span class="t">ORCID</span><span class="s">Identificador de pesquisador</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
-      </li>
-
-      <!-- ⏳ DAMA EVIDENCE — pendente (repositório ainda privado).
-           Quando publicar, descomente este bloco e troque o link:
-      <li>
-        <a href="https://github.com/SEU-USUARIO/damaevidence" target="_blank" rel="noopener noreferrer">
-          <span class="ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18c-4 1.5-4-2.5-6-3"/><path d="M15 21v-3.6a3 3 0 0 0-.9-2.4c3-.3 6-1.5 6-6.6a4.8 4.8 0 0 0-1.3-3.3 4.5 4.5 0 0 0-.1-3.3s-1.1-.3-3.5 1.3a12 12 0 0 0-6.4 0C6 1.2 4.9 1.5 4.9 1.5a4.5 4.5 0 0 0-.1 3.3A4.8 4.8 0 0 0 3.5 8.1c0 5.1 3 6.3 6 6.6a3 3 0 0 0-.9 2.3V21"/></svg>
-          </span>
-          <span class="txt"><span class="t">Dama Evidence</span><span class="s">Plataforma open source p/ revisões sistemáticas</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
-      </li>
-      -->
-
+      <li><a href="https://instagram.com/ferdamsceno" target="_blank" rel="me noopener noreferrer">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.7" fill="currentColor" stroke="none"/></svg></span>
+        <span class="txt"><span class="t">Instagram</span><span class="s">@ferdamsceno · bastidores, Meu Locus &amp; contato</span></span>
+        <span class="arrow" aria-hidden="true">↗</span></a></li>
+      <li><a href="https://www.linkedin.com/in/fernanda-damasceno-de-souza/" target="_blank" rel="me noopener noreferrer">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM3 9h4v12H3V9Zm6 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85V21H9V9Z"/></svg></span>
+        <span class="txt"><span class="t">LinkedIn</span><span class="s">Trajetória profissional</span></span>
+        <span class="arrow" aria-hidden="true">↗</span></a></li>
+      <li><a href="https://lattes.cnpq.br/6187206833642626" target="_blank" rel="me noopener noreferrer">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg></span>
+        <span class="txt"><span class="t">Currículo Lattes</span><span class="s">CV acadêmico (CNPq)</span></span>
+        <span class="arrow" aria-hidden="true">↗</span></a></li>
+      <li><a href="https://orcid.org/0009-0001-8579-6436" target="_blank" rel="me noopener noreferrer">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 8.5v7"/><circle cx="9" cy="6.4" r="0.4" fill="currentColor"/><path d="M13 8.5h2.2a3.5 3.5 0 0 1 0 7H13v-7Z"/></svg></span>
+        <span class="txt"><span class="t">ORCID</span><span class="s">Identificador de pesquisador</span></span>
+        <span class="arrow" aria-hidden="true">↗</span></a></li>
     </ul>
 
-    <!-- ===================== SEÇÃO 2 ===================== -->
-    <p class="section-label">The Deep Sync · divulgação científica</p>
+    <p class="section-label">Meu Locus · divulgação científica</p>
     <ul class="links">
-
-      <li>
-        <a href="https://www.youtube.com/@TheDeepSync-PT" target="_blank" rel="noopener noreferrer">
-          <span class="ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2 15 12l-5 2.8V9.2Z" fill="currentColor" stroke="none"/></svg>
-          </span>
-          <span class="txt"><span class="t">YouTube — The Deep Sync</span><span class="s">Medicina baseada em evidências &amp; IA</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://instagram.com/thedeepsync.pt" target="_blank" rel="noopener noreferrer">
-          <span class="ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.7" fill="currentColor" stroke="none"/></svg>
-          </span>
-          <span class="txt"><span class="t">Instagram do canal</span><span class="s">@thedeepsync.pt</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
-      </li>
-
+      <li><a href="https://www.youtube.com/@MeuLocus" target="_blank" rel="noopener noreferrer">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2 15 12l-5 2.8V9.2Z" fill="currentColor" stroke="none"/></svg></span>
+        <span class="txt"><span class="t">YouTube — Meu Locus <span style="opacity:.65;font-weight:400">(em andamento)</span></span><span class="s">ciência que mora nos detalhes</span></span>
+        <span class="arrow" aria-hidden="true">↗</span></a></li>
     </ul>
 
-    <!-- ===================== SEÇÃO 3 ===================== -->
     <p class="section-label">Indicações</p>
     <ul class="links">
-
-      <li>
-        <a href="https://ferdamas96.github.io/linksdescontos/" target="_blank" rel="noopener noreferrer">
-          <span class="ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a2 2 0 0 1 2-2V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v3a2 2 0 0 1 0 4v3a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-3a2 2 0 0 1-2-2Z"/><path d="M9 9h0M15 15h0M15 9l-6 6"/></svg>
-          </span>
-          <span class="txt"><span class="t">Cupons &amp; descontos</span><span class="s">O que eu uso e recomendo de verdade</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
-      </li>
-
+      <li><a href="https://ferdamas96.github.io/linksdescontos/" target="_blank" rel="noopener noreferrer">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a2 2 0 0 1 2-2V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v3a2 2 0 0 1 0 4v3a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-3a2 2 0 0 1-2-2Z"/><path d="M9 9h0M15 15h0M15 9l-6 6"/></svg></span>
+        <span class="txt"><span class="t">Cupons &amp; descontos</span><span class="s">O que eu uso e recomendo de verdade</span></span>
+        <span class="arrow" aria-hidden="true">↗</span></a></li>
+      <li><span class="links-soon">
+        <span class="ic" aria-hidden="true">🤖</span>
+        <span class="txt"><span class="t">Declaração Ética de IA na Pesquisa</span><span class="s">Lançamento em breve ✨</span></span>
+        <span class="arrow" aria-hidden="true" style="opacity:.5">🔒</span></span></li>
     </ul>
 
     <footer>© <span id="y"></span> Fernanda Damasceno de Souza</footer>
   </main>
-
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
