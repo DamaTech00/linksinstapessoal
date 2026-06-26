@@ -9,6 +9,9 @@
   <meta property="og:description" content="Estudante de medicina (USCS) · síntese de evidências, IA e os detalhes que mudam tudo." />
   <meta property="og:type" content="profile" />
   <meta name="theme-color" content="#F1F2FC" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     :root{
       --navy:#2A3055; --cobalt:#5B79E0; --silver:#9AA0C0; --muted:#767BA0;
@@ -17,19 +20,21 @@
     *{box-sizing:border-box;margin:0;padding:0}
     html{-webkit-text-size-adjust:100%}
     body{
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-      color:var(--navy);line-height:1.5;min-height:100vh;display:flex;justify-content:center;
+      font-family:"Nunito",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+      color:var(--navy);line-height:1.55;min-height:100vh;display:flex;justify-content:center;
       padding:40px 20px 56px;-webkit-font-smoothing:antialiased;
       background:
         radial-gradient(900px 520px at 50% -8%, #E4E6FA 0%, rgba(228,230,250,0) 60%),
         linear-gradient(180deg, #FAFBFF 0%, #F1F2FC 46%, #ECEDFA 100%);
       background-attachment:fixed;
     }
-    .wrap{width:100%;max-width:480px;display:flex;flex-direction:column;align-items:center}
+    .wrap{width:100%;max-width:480px;display:flex;flex-direction:column;align-items:center;position:relative;z-index:1}
+    .bg-dna{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+    .bg-dna span{position:absolute;user-select:none}
     .avatar{width:96px;height:96px;border-radius:50%;background:var(--cobalt);color:#fff;
       display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:700;letter-spacing:1px;
       box-shadow:0 0 0 4px #FFFFFF,0 0 0 6px rgba(91,121,224,.32),0 10px 30px rgba(42,48,85,.14);user-select:none}
-    h1{margin-top:18px;font-size:1.5rem;font-weight:700;text-align:center}
+    h1{margin-top:18px;font-size:1.7rem;font-weight:600;text-align:center;font-family:"Fraunces",Georgia,serif;letter-spacing:.2px}
     .role{margin-top:6px;font-size:.98rem;color:#4C5176;text-align:center;max-width:360px}
     .role-en{margin-top:2px;font-size:.82rem;color:var(--muted);font-style:italic;text-align:center;max-width:360px}
     .story{width:100%;margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px}
@@ -58,6 +63,20 @@
   </style>
 </head>
 <body>
+  <div class="bg-dna" aria-hidden="true">
+    <span style="top:5%;left:6%;font-size:30px;opacity:.10;transform:rotate(-15deg)">🧬</span>
+    <span style="top:12%;left:86%;font-size:40px;opacity:.08;transform:rotate(20deg)">🧬</span>
+    <span style="top:24%;left:13%;font-size:24px;opacity:.09;transform:rotate(35deg)">🧬</span>
+    <span style="top:33%;left:80%;font-size:30px;opacity:.07;transform:rotate(-25deg)">🧬</span>
+    <span style="top:45%;left:7%;font-size:36px;opacity:.10;transform:rotate(12deg)">🧬</span>
+    <span style="top:55%;left:90%;font-size:26px;opacity:.08;transform:rotate(-30deg)">🧬</span>
+    <span style="top:64%;left:16%;font-size:30px;opacity:.09;transform:rotate(18deg)">🧬</span>
+    <span style="top:73%;left:82%;font-size:38px;opacity:.07;transform:rotate(-12deg)">🧬</span>
+    <span style="top:83%;left:9%;font-size:28px;opacity:.10;transform:rotate(28deg)">🧬</span>
+    <span style="top:90%;left:72%;font-size:24px;opacity:.08;transform:rotate(-20deg)">🧬</span>
+    <span style="top:40%;left:92%;font-size:30px;opacity:.08;transform:rotate(15deg)">🧬</span>
+    <span style="top:95%;left:34%;font-size:26px;opacity:.07;transform:rotate(-18deg)">🧬</span>
+  </div>
   <main class="wrap">
     <div class="avatar" aria-hidden="true">FDS</div>
     <h1>Fernanda Damasceno de Souza</h1>
