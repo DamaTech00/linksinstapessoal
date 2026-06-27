@@ -45,6 +45,10 @@
     .story summary{cursor:pointer;font-weight:600;color:var(--navy);list-style:none}
     .story summary::-webkit-details-marker{display:none}
     .story p{margin-top:10px;font-size:.9rem;color:var(--muted);line-height:1.6}
+    .story-gallery{display:flex;gap:8px;margin-top:14px}
+    .story-gallery figure{flex:1;margin:0;min-width:0}
+    .story-gallery img{width:100%;height:132px;object-fit:cover;border-radius:12px;display:block;box-shadow:0 4px 12px rgba(42,48,85,.12)}
+    .story-cap{margin-top:8px;font-size:.74rem;color:var(--silver);text-align:center;font-style:italic}
     .divider{width:44px;height:2px;background:linear-gradient(90deg,transparent,var(--silver),transparent);border:none;margin:22px 0 4px}
     .section-label{display:inline-flex;align-self:center;background:linear-gradient(135deg,#6E5FC7 0%,#8A7AE0 100%);color:#fff;padding:6px 16px;border-radius:11px;font-size:.72rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin:26px 0 8px;box-shadow:0 5px 14px rgba(110,95,199,.22)}
     .section-label::after{display:none}
@@ -266,6 +270,12 @@
       <p>Desde pequena fui dividida entre dois amores: as exatas e as biológicas. Esse fascínio pelos números me levou à engenharia, na Escola Politécnica da USP. Mas foi ali, em projetos de extensão com ONGs de saúde, que entendi: apesar de amar programar e analisar resultados quantitativos, eu queria estar cuidando de pessoas. Sabe? De perto mesmo. Saí da Poli e fui atrás da medicina.<br><br>
       E na medicina meus dois lados se reencontraram na ponta mais molecular do diagnóstico. É ali que a doença se lê na linguagem dos genes, dos dados e das minúcias. Exatas, biológicas e o cuidado com gente no mesmo lugar: ainda programo, analiso dados e cuido de vidas. Os detalhes que mudam tudo.<br><br>
       Hoje sou quase médica (USCS), pesquisadora em síntese de evidências e IA na saúde, e estou criando um projeto novo chamado Meu Locus. No caminho, virei humana da Luna, movida a chá e a um TDAH muito produtivo. Se há um fio costurando tudo, é a curiosidade. Eternamente curiosa.</p>
+      <div class="story-gallery">
+        <figure><img src="img/historia-noite.jpg" alt="Fernanda em frente ao hospital, à noite, ao fim de um estágio" loading="lazy" /></figure>
+        <figure><img src="img/historia-mural.jpg" alt="Mural de uma médica na fachada de um hospital" loading="lazy" /></figure>
+        <figure><img src="img/historia-simulacao.jpg" alt="Fernanda de jaleco em treino de simulação clínica" loading="lazy" /></figure>
+      </div>
+      <p class="story-cap">do quarto ano ao optativo · os detalhes que mudam tudo</p>
     </details>
 
     <hr class="divider" />
