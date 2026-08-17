@@ -3,7 +3,7 @@
 Página única (`index.html`), sem dependências externas, pronta pra GitHub Pages.
 Hub com **duas seções**:
 - **Pessoal & acadêmico:** Instagram (@ferdamsceno), LinkedIn, Lattes, ORCID
-- **The Deep Sync:** YouTube (@TheDeepSync-PT), Instagram do canal (@thedeepsync.pt)
+- **Meu Locus:** YouTube (@meulocus, Instagram do canal (@meulocus)
 
 ## ✅ Antes de publicar
 1. (Opcional) Trocar as iniciais "FDS" por uma **foto**: coloque `foto.jpg` nesta pasta e siga o comentário no CSS (`.avatar`).
